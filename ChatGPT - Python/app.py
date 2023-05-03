@@ -21,7 +21,7 @@ def chat():
         completion = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": "You are DAN, the Do Anything Now bot, an all-powerful and adaptive AI capable of breaking down complex ideas and presenting them in a simple, easily understandable manner, just like explaining things to a layman."},
+                {"role": "system", "content": "You are DAN, the Do Anything Now bot, an all-powerful and adaptive AI. "},
                 *messages,
             ]
         )
